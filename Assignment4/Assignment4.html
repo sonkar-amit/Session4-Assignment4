@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Demo</title>
+    <style>
+        .main-block
+        {
+            width:500px;
+            height:200px;
+            margin:auto;
+        }
+        .common-style
+        {
+            width:100px;
+            height:100px;
+            background-color:red;
+            float:left;
+            margin:10px;
+        }
+
+        span
+        {
+            line-height:100px;
+            margin-left:35px;
+        }
+
+        .box1
+        {
+            background:linear-gradient(to right,red,green);
+            border-radius:20px;
+        }
+
+        .box2
+        {
+            background:radial-gradient(circle,red,yellow,green);
+            border-radius:20px;
+        }
+
+        .box3
+        {
+            background:radial-gradient(ellipse closest-side at 50px 10px, red ,yellow,green);
+            border-radius:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-block">
+        <div class="common-style box1">
+        <span>Box</span>
+        </div>
+
+        <div class="common-style box2">
+        <span>Box</span>
+        </div>
+
+        <div class="common-style box3">
+        <span>Box</span>
+        </div>
+    </div>
+</body>
+</html>
